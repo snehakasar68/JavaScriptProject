@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+<script>
+	/*var person={firstName:"jay",lastName:"patil",age:25,id:101, get fullName(){return this.firstName+" "+this.lastName}}
+
+           document.getElementById("demo").innerHTML=person.fullName; */ 
+
+           var person={firstName:"jay",lastName:"patil",age:25,id:101,email:"", set setMail(email){this.email=email},
+          // get mail(){return this.email.toUpperCase()}
+           mail:function(){return this.email}
+
+             }
+             person.setMail="jay@gmail.com";
+
+           document.getElementById("demo").innerHTML=person.mail();  
+           //object.defineProperty()
+           
+</script>
+</body>
+</html>
+ <!-- 
+string name;
+
+public void setName(name){
+	this.name=name
+}
+public string getName(){
+	return this.name
+}
+ person p=new person()
+p.setName("jay")
+string n=p.getName(); -->
+

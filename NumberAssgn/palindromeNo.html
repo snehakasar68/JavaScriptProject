@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Palindrome Number</title>
+    </head>
+    <body>
+        <label>Enter Number</label>
+        <input type="text" id="num"/>
+        <button onclick="palindrome()">Check</button>
+        <h1 id="demo"></h1>
+        <script>
+            function palindrome(){
+                var num=parseInt(document.getElementById("num").value);
+                var orgNo=num;
+                var sum=0,rem;
+                while(num>0){
+                    rem=parseInt(num%10);
+                    sum=parseInt((sum*10)+rem);
+                    num=parseInt(num/10);
+                }
+                if(orgNo==sum) 
+                    document.getElementById("demo").innerHTML=orgNo+" is Palindrome Number!!";
+                    else
+                        document.getElementById("demo").innerHTML=orgNo+" is not Palindrome Number!!";
+                
+            }
+        </script>
+    </body>
+</html>

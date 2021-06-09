@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <label>Enter a number:</label>
+    <input type="number" id="time"/><br><br>
+    <button onclick="convert()">Convert Hours</button><br>
+    <h1 id="demo"></h1>
+    <script>
+        function convert(){
+            var time=document.getElementById('time').value;
+            if(time>=60){
+                var hours=Math.floor(time/60);
+                var min=(time-(hours*60));
+                document.getElementById('demo').innerHTML=hours+" Hour "+min+" minutes";
+            }
+            else {
+                var min=time;
+             document.getElementById('demo').innerHTML=min+" minutes";
+            }
+             
+            
+        }
+
+    </script>
+</body>
+</html>

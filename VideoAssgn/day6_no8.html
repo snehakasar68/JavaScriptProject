@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2 id="demo"></h2>
+        <script>
+            function emp(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+            }
+            var emp1=new emp(101,"sneha",20000);
+            var emp2=new emp(102,"ram",18000);
+            var emp3=new emp(103,"shyam",9500);
+            var emp4=new emp(104,"sundar",15000);
+            var arr=[emp1,emp2,emp3,emp4];
+            var result="";
+            var result1="";
+            result=arr.map((value)=>{
+                return "Id:"+value.id+" Name:"+value.name+" Salary:"+value.salary+"<br>";
+            })
+            document.getElementById("demo").innerHTML=result;
+            
+            result1=arr.filter((value)=>{
+                return  value.salary>10000;
+            })
+            document.getElementById("demo").innerHTML=result1;
+        </script>
+    </body>
+</html>

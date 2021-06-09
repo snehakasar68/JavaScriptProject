@@ -1,0 +1,27 @@
+<!-- popup boxes- alert box-y,confirm box- y/n, prompt box -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<input type="text" id="text">
+<button onclick="fun()">click me</button>
+<script >
+	function fun(){
+		/*alert("are you sure?????");
+		var str=document.getElementById("text").value;
+         console.log(str);*/
+		var txt;
+		if(confirm("press button!")){
+			txt="you pressed ok!";
+
+		}else{
+			txt="you pressed cancel";
+		}
+		document.getElementById("demo").innerHTML=txt;
+	}
+</script>
+</body>
+</html>

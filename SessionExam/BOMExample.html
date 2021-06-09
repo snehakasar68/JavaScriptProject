@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>hiiiii</h1>
+
+<div id="demo"></div>
+<div id="demo1"></div>
+<button onclick="newDoc()">load new doc</button>
+<button onclick="closeAPP()">close</button>
+<button onclick="opeAPP()">open new</button>
+<script >
+	/*var height=window.innerHeigth || document.documentElement.clientHeight || document.body.clientHeight;
+
+	document.getElementById("demo1").innerHTML=height;
+	document.getElementById("demo").innerHTML=screen.availHeight +" "+screen.availWidth;
+
+	console.log(window);*//*
+	
+document.getElementById("demo1").innerHTML=window.location.href;
+document.getElementById("demo").innerHTML=window.location.pathname;
+console.log(window.location);
+
+function newDoc(){
+	window.location.assign("https://www.facebook.com/")
+}
+
+function closeAPP(){
+	window.close();
+}
+function opeAPP(){
+	window.open("https://www.facebook.com/");
+}
+ console.log(window.history);
+ console.log(window.navigator);*/
+ document.getElementById("demo").innerHTML=window.navigator.appVersion;
+document.getElementById("demo1").innerHTML=window.navigator.onLine;
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1 id="demo"></h1>
+        <script>
+            var dayFind=function(){
+                var d=new Date();
+                console.log(d.getDay());
+                if(d.getDay()==0 || d.getDay()==6){
+                    document.getElementById('demo').innerHTML="Today is Weekend";
+                }
+                else
+                document.getElementById('demo').innerHTML="Today is Working day";
+            }();
+        </script>
+    </body>
+</html>

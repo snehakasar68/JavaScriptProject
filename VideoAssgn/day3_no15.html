@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <label>Enter a Minute:</label>
+        <input type="text" id="min"/>
+        <button onclick="convertSecond()">Display</button>
+        <h2 id="demo"></h2>
+        <script>
+            function convertSecond(){
+                var min=parseInt(document.getElementById("min").value);
+                document.getElementById("demo").innerHTML="Seconds are:"+min*60;
+            }
+        </script>
+    </body>
+</html>

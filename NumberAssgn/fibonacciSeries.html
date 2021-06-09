@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Fibonacci Series</title>
+    </head>
+    <body>
+        <label>Enter Number</label>
+        <input type="text" id="num"/>
+        <button onclick="fibonacci()">Display</button>
+        <h1 id="demo"></h1>
+        <script>
+            function fibonacci(){
+                var num1=parseInt(document.getElementById("num").value);
+                var a=0,b=1,c=0;
+                var result=" ";
+                result+=a+" "+b+" ";
+                for(let i=3;i<=num1;i++){
+                  c=b+a;
+                  result+=c+" ";
+                  a=b;
+                  b=c;
+               
+                }
+                document.getElementById("demo").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

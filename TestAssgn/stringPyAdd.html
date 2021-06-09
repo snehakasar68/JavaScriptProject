@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <label>Enter a String:</label>
+        <input type="text" id="str"/><br><br>
+        <button onclick="chnage()">Change String</button><br><br>
+        <h2 id="demo"></h2>
+        <script>
+            function chnage(){
+                var str=document.getElementById('str').value;
+                var str1=str.slice(0,2);
+                if(str1=="Py")
+                document.getElementById('demo').innerHTML=str.substr(2,str.length-1);
+                else
+                document.getElementById('demo').innerHTML="Py"+str;
+            }
+        </script>
+    </body>
+</html>

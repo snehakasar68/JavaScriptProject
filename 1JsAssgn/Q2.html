@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <label>Enter a String:</label>
+        <input type="text" id="str"/><br><br>
+        <button onclick="substring()">Check</button>
+        <h2 id="demo"></h2>
+        <script>
+            function substring(){
+                var result=[];
+                var str=document.getElementById('str').value;
+                for(let i=0;i<str.length;i++)
+                {
+                    for(let j=i+1;j<str.length+1;j++){
+                        result.push(str.slice(i,j));    
+                        console.log(result);
+                    }
+                }
+                document.getElementById('demo').innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

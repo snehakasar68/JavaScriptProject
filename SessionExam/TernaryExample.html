@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="age" value="18"/>
+	<button onclick="vote()">check for vote</button>
+	<h1 id="demo"></h1>
+	<script>
+		function vote(){
+			var age,voteable,age1;
+			/*age1=document.getElementById("age").value;
+			age=Number(age1)*/
+			age=Number(document.getElementById("age").value);
+			//console.log(typeof age1);
+			console.log(typeof age);
+			console.log(age);
+			/*if(isNaN(age)){
+				voteable="Please enter only number"
+				//alert(voteable)
+				//document.getElementById("demo").innerHTML=voteable
+			}else{
+				voteable=(age<18)?"too young  to vote":" old enough  to vote";
+		     //document.getElementById("demo").innerHTML=voteable
+			}*/
+			if(typeof age!=NaN){
+				voteable=(age<18)?"too young  to vote":" old enough  to vote";
+			}else{
+				voteable="Please enter only number"
+			}
+		document.getElementById("demo").innerHTML=voteable
+
+		/*if(typeof age!=NaN){voteable=(age<18)?"too young  to vote":" old enough  to vote";}else{voteable="Please enter only number"}*/
+		
+
+		}
+		
+
+	</script>
+
+</body>
+</html>

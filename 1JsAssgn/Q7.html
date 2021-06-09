@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <label>Enter a String:</label>
+        <input type="text" id="str"/><br><br>
+        <button onclick="convertAray()">Convert </button><br>
+        <h1 id="demo"></h1>
+        <script>
+            function convertAray(){
+                var str=document.getElementById('str').value;
+                var str1=str.split(" ");
+                console.log(typeof str1);
+                document.getElementById('demo').innerHTML=str1;
+            }
+        </script>
+    </body>
+</html>

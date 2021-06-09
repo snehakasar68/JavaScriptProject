@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 id="demo1"></h1>
+<h1 id="demo"></h1>
+
+
+<script>
+	//forEach()
+	/*var personArr=["jay","sara","ansh","yash"];
+	var txt="";
+	personArr.forEach(show);
+	function show(value,index,array){
+		txt+=value+"<br/>";
+		console.log(index);
+		console.log(array);
+	}
+	document.getElementById("demo").innerHTML=txt;*/
+
+	// Map()
+	var num=[10,20,30,40];
+	/*var result=num.map(multiByTwo);
+  function multiByTwo(value,index,array){
+  	return value*2;
+  }
+  function multiByTwo(num){
+  	return num*2;
+  }*/
+  //var result=num.map(function(num){	return num*3;});
+// es6
+//var result=num.map((num)=>{	return num*2;});
+/*var result=num.map(num=>num*3);
+  document.getElementById("demo1").innerHTML="original array:<br/> "+num;
+  document.getElementById("demo").innerHTML="New Array: <br/>"+result;
+   num=>{
+ 	if(num%2==0){
+ 		return num;
+ 	}
+ }*/
+
+ //filter()
+ var personAge=[10,20,5,25,40,15,30];
+  /*var adults=personAge.filter(age);
+  function age(value){
+  	return value>18
+  }*/
+  /*var adults=personAge.filter((age)=>{return age>18});
+  
+  document.getElementById("demo1").innerHTML="original personAge:<br/> "+personAge;
+  document.getElementById("demo").innerHTML="New personAge: <br/>"+adults;*/
+   
+   // reduce()- retrun single- left- right
+   	var num=[10,20,30,40];
+  /* var sum=	num.reduce(add);// without inital value
+  // var sum=	num.reduce(add,5);// with inital value
+   function add(total,currentValue){
+   	return total+currentValue;
+   }*/
+  // var sum=	num.reduce((total,currentValue)=>total+currentValue)
+ // document.getElementById("demo").innerHTML="Sum :<br/> "+sum;
+
+  /*var sum=(total,currentValue)=>total+currentValue;
+   document.getElementById("demo").innerHTML="Sum :<br/> "+num.reduce(sum,50);*/
+
+   // reduceRight()- right-left
+
+  /* var sum=num.reduceRight((total,value)=>{console.log(value);
+   	                      return total+value})
+   document.getElementById("demo").innerHTML="Sum :<br/> "+sum;
+
+   var arr=[[0,1],[2,3],[4,5]].reduceRight((inital,value)=>{
+   return inital.concat(value)})
+    document.getElementById("demo1").innerHTML=arr;
+*/
+    // every() ture/flase
+     	var num=[10,20,30,40,5];
+     	var s=num.every((value)=>value>=10)
+     	//document.getElementById("demo").innerHTML=s;
+    // some() 	
+     var num=[1,20,3,4,50];
+     	var s=num.some((value)=>value>=10)
+     	//document.getElementById("demo").innerHTML=s;
+
+     	 var num=[1,2,3,4,5];
+     	var s=num.some((value)=>value%2===0)
+     	//document.getElementById("demo").innerHTML=s;
+
+    //indexOf() && lastIndexOf()
+    var num=[1,2,3,4,5,3,6,3];
+    // var s=num.indexOf(3,4)
+   // var s=num.indexOf(3,4)
+    //var s=num.indexOf(13)
+   // var s=num.lastIndexOf(3)
+     var s=num.lastIndexOf(3,6)
+   // document.getElementById("demo").innerHTML=s;
+
+    // find()
+var num=[5,15,8,150,45];
+ var s=num.find(value=>value>10)
+ //var s=num.find(value=>value>300)
+   // document.getElementById("demo").innerHTML=s;
+
+    // findIndex()
+   var num=[5,15,8,150,45];
+    var s=num.findIndex(value=>value>10)
+ //var s=num.findIndex(value=>value>300)
+   //  document.getElementById("demo").innerHTML=s;
+
+     // includes()
+ var num=[5,15,8,150,45];
+ var s=num.includes(150)
+ // var s=num.includes(1500)
+ // document.getElementById("demo").innerHTML=s;
+
+   var lang=["java","angular","html"];
+ //var s=lang.includes("reactjs")
+   var s=lang.includes("html")
+  //var s=lang.includes("Html")
+  document.getElementById("demo").innerHTML=s;
+
+  // of() && values()
+</script>
+</body>
+</htm

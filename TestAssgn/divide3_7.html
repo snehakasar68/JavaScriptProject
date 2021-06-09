@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <input type="number" id="no"/><br><br>
+    <button onclick="check()">Check</button><br>
+    <h2 id="demo"></h2>    
+    <script>
+        function check(){
+            var no=document.getElementById('no').value;
+            if(no>0)
+            {
+                if(no%3==0 && no%7==0 )
+                   document.getElementById('demo').innerHTML=no+" is divide by 3 and 7 also";
+                   else if(no%3==0)
+                   document.getElementById('demo').innerHTML=no+" is divide by 3";
+                   else if(no%7==0)
+                   document.getElementById('demo').innerHTML=no+" is divide by 7";
+            }
+            else
+            document.getElementById('demo').innerHTML=no+ "is Negative number";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 id="demo" style="color:red"></h1>
+<h2 id="demo1"></h2>
+<script>
+	var person="jgdfk";
+	person[1]="yash"
+	//document.getElementById("demo").innerHTML=person[1]
+		/*document.getElementById("demo").innerHTML=person;
+		var p={firstName:'jay',age:20}
+		p[age]*/
+	/*	var str=""
+		for (let i =0; i<person.length; i++) {
+			str+=person[i]+" "
+		}
+		document.getElementById("demo").innerHTML=str;*/
+
+			var str="<ol>"
+		for (let i =0; i<person.length; i++) {
+			str+="<li>"+person[i]+"</li>"
+		}
+
+		str+="</ol>"
+		document.getElementById("demo").innerHTML=str;
+
+	 if(Array.isArray(person)){
+	  		var str="<ol>"
+		for (let i =0; i<person.length; i++) {
+			str+="<li>"+person[i]+"</li>"
+		}
+
+		str+="</ol>"
+		 document.getElementById("demo").innerHTML=str;
+	  }else{
+	  	document.getElementById("demo").innerHTML="please define array";
+	  }
+
+	  //
+	  var p=[1,2,3,];
+	   document.getElementById("demo1").innerHTML=isArrayOne(p);
+ function isArrayOne(p){
+ 	return p.constructor.toString().indexOf("Array")>-1;
+ }
+// array methods
+
+//document.getElementById("demo").innerHTML=person.join(" # ");
+</script>
+</body>
+</html>

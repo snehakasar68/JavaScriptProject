@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- <label>Enter slice of bread:</label>
+    <input type="number" id="bread"/><br><br>
+    <label>Enter slice of Chesse:</label>
+    <input type="number" id="cheese"/><br><br>
+    <button onclick="cal()">Calculate Sandwitch</button>-->
+    <h2 id="demo"></h2> 
+    <script>
+        function cal(slicesOfBread,sliceOfCheese){
+            if(sliceOfCheese==slicesOfBread/2)
+                return sliceOfCheese;
+            else if(sliceOfCheese>=slicesOfBread/2)
+            return slicesOfBread/2;
+            else if(sliceOfCheese<=slicesOfBread/2)
+            return sliceOfCheese;
+            
+        }
+        document.getElementById('demo').innerHTML=cal(10,6) +" sandwitch can made!"
+
+    </script>
+</body>
+
+</html>

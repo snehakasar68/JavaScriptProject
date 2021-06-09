@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <label>Enter a String:</label>
+        <input type="text" id="str"/>
+        <button onclick="palin()">Display</button>
+        <h2 id="demo"></h2>
+        <script>
+            function palin(){
+                var str=document.getElementById("str").value;
+                var revStr=str.reverse();
+                document.getElementById("demo").innerHTML=revStr;
+            }
+        </script>
+    </body>
+</html>

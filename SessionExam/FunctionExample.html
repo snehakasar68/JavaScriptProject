@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="demo" style="color:red"></h1>
+	<h1 id="demo1" style="color:green"></h1>
+	<h1 id="demo11" style="color:yellow"></h1>
+<script>
+	//function defintion
+	/*function addNumber(){
+		
+		console.log("in function...")
+		//var a=100,b=30;
+		//var c=a+b;
+		//document.getElementById("demo").innerHTML="Addition= "+c
+		//document.getElementById("demo").innerHTML="Addition= "+(a+b)
+		document.getElementById("demo").innerHTML="Addition= "+(100+50)
+	}
+	console.log("fun call.....,")
+	// function invokes
+	addNumber();*/
+
+
+/*function addNumber(){
+		var a=100,b=30;
+	return (a+b);
+		
+	}
+
+	document.getElementById("demo").innerHTML="Addition= "+addNumber()*/
+	//document.getElementById("demo").innerHTML="Addition= "+addNumber
+//document.write(a)
+
+/*
+function addNumber(a,b,c){
+
+	return (a+b+c);
+		
+	}
+	document.getElementById("demo").innerHTML="Addition= "+addNumber(20,5,20)
+*/
+
+/*	function addNumber(a,b,c){
+
+	return (a+b+c);
+		
+	}
+	var sum=addNumber(20,5,20);
+	document.getElementById("demo").innerHTML="Addition= "+sum
+	document.write(sum);
+	console.log("sum= "+sum)*/
+
+	// function expression
+	/*var multi=function (){ return (35*3)};
+	 document.getElementById("demo1").innerHTML="multiplication= "+multi()*/
+ 
+
+ /*var multi=function (){ 
+ 	document.getElementById("demo1").innerHTML="multiplication= "+(14*6)
+ };
+multi()*/
+/*
+var multi=function (a,b){ return (a*b)};
+
+document.getElementById("demo").innerHTML="multiplication= "+multi(16,7)
+document.getElementById("demo11").innerHTML="multiplication= "+multi(15,7)
+document.getElementById("demo1").innerHTML="multiplication= "+(multi(11,7)+100)
+*/
+
+function addNumber(a,b,c,d){
+
+	//return arguments.length;
+	return a*b
+		
+	}
+	var data=addNumber(20,5,20,23).toString()
+	document.getElementById("demo").innerHTML="length= "+ typeof data  +" "+ data
+
+
+</script>
+</body>
+</html>

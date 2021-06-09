@@ -1,0 +1,40 @@
+<!-- popup boxes- alert box-y,confirm box- y/n, prompt box -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="demo"></div>
+<button onclick="fun()">click me</button>
+<script >
+	/*var num1=parseInt(prompt("please enter number one:"));
+	var num2=parseInt(prompt("please enter number two:"));
+	document.write(num1+num2);*/
+	
+	/*function fun(){
+		var txt;
+		if(confirm("press button!")){
+			txt="you pressed ok!";
+		}else{
+			txt="you pressed cancel";
+		}
+		document.getElementById("demo").innerHTML=txt;
+	}*/
+
+	function fun(){
+		var txt;
+		var person=prompt("please enter you name:", "jay")
+		console.log(person);
+		if(person==null||person==""){
+			txt="person cancel prompt";
+		}else{
+			txt="Hello"+" "+person+" "+"How are you";
+		}
+		document.getElementById("demo").innerHTML=txt;
+	}
+
+	//alert("hello\nhow are you");
+</script>
+</body>
+</html>

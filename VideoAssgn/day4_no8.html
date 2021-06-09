@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <label>Enter a String:</label>
+        <input type="text" id="str"/>
+        <button onclick="capitalieze()">Display</button>
+        <h2 id="demo"></h2>
+        <script>
+            function capitalieze(){
+                var str=document.getElementById("str").value;
+                str=str.charAt(0).toUpperCase()+str.slice(1);
+                document.getElementById("demo").innerHTML=str;
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label>Enter 1st Number</label>
+        <input type="text" id="num"/><br>
+        <br>
+        <label>Enter 2nd Number</label>
+        <input type="text" id="num1"/><br> <br>
+        <button id="add" onclick="AirthmaticOpe(this.id)">Addition</button>
+        <button id="sub" onclick="AirthmaticOpe(this.id)">Subtraction</button>
+        <button id="mul" onclick="AirthmaticOpe(this.id)">Multiplication</button>
+        <button id="div" onclick="AirthmaticOpe(this.id)">Division</button>
+        <h1 id="demo"></h1>
+        <script>
+            function AirthmaticOpe(clicked){
+                var num=parseInt(document.getElementById("num").value);
+                var num1=parseInt(document.getElementById("num1").value);
+                switch(clicked){
+                    case "add":
+                        document.getElementById("demo").innerHTML="Addition is:"+(num+num1);
+                    break;
+                    case "sub":
+                        document.getElementById("demo").innerHTML="Subtraction is:"+(num-num1);
+                    break;
+                    case "mul":
+                        document.getElementById("demo").innerHTML="Multiplication is:"+(num*num1);;
+                    break;
+                    case "div":
+                        document.getElementById("demo").innerHTML="Division is:"+(num/num1);;
+                    break;
+                }
+                
+            }
+        </script>
+    </body>
+</html>

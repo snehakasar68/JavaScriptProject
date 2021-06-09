@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Armstrong</title>
+    </head>
+    <body>
+        <label>Enter Number</label>
+        <input type="text" id="num"/>
+        <button onclick="findArm()">Check</button>
+        <h1 id="demo"></h1>
+        <script>
+            function findArm()
+            {
+                var num=parseInt(document.getElementById("num").value);
+                var sum=0,num1;
+                var orginalNum=num;
+                while(num>0)
+                {
+                    num1=parseInt(num%10);
+                    num=parseInt(num/10);
+                    sum+=num1**3;
+                    
+                }
+                if(sum==orginalNum)
+                document.getElementById("demo").innerHTML=orginalNum+" is Armstrong number!";
+                else
+                document.getElementById("demo").innerHTML=orginalNum+" is not Armstrong number!";
+            }
+        </script>
+    </body>
+</html>

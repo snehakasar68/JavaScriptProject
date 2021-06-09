@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <!-- //Write a JavaScript program to compute the sum of the two given integers If the two 
+         //values are same, else returns double their sum. -->
+        <label>Enter 1st Number</label>
+        <input type="text" id="num"/><br>
+        <br>
+        <label>Enter 2nd Number</label>
+        <input type="text" id="num1"/><br> <br>
+        <button onclick="sum()">Addition</button>
+        <h2 id="demo"></h2>
+        <script>
+            function sum(){
+                var num=parseInt(document.getElementById("num").value);
+                var num1=parseInt(document.getElementById("num1").value);
+                var sum;
+                if(num==num1){
+                    sum=num+num1;
+                }
+                else
+                sum=2*(num+num1);
+                document.getElementById("demo").innerHTML="sum is:"+sum;
+            }
+        </script>
+    </body>
+</html>

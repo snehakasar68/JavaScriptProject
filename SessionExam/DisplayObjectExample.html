@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+<script>
+	var person={firstName:"jay",lastName:"patil",age:25,id:101,city:"pune"}
+	//document.getElementById("demo").innerHTML=person
+	/*document.getElementById("demo").innerHTML=person.firstName+","+person.age+","+person.city
+	*/
+	/*var text="";
+	 for(i in person){
+	 	text+=person[i]+" "
+	 	//text=text+person[i]+" "
+	 }
+	 document.getElementById("demo").innerHTML=text
+	 //document.write(text)
+*/
+//Object.values()
+/*var myArr=Object.values(person);
+ document.getElementById("demo").innerHTML=myArr
+*/
+ //json.Stringify()- js object-> string
+ /*var myString=JSON.stringify(person);
+  console.log(person)
+  document.getElementById("demo").innerHTML="JSON DATA= "+myString
+*/
+/*
+ var arr=['jay','ansh','amar','sara'];
+ // array to string
+ var str=JSON.stringify(arr);
+  document.getElementById("demo").innerHTML="JSON DATA= "+str
+*/  
+var arr1=[1,2,3,4,5];
+var s=JSON.stringify(arr1);
+document.getElementById("demo").innerHTML="JSON DATA= "+s
+document.write(typeof s);
+
+
+</script>
+</body>
+</html>

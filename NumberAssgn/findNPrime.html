@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Prime Numbers</title>
+    </head>
+    <body>
+        <label>Enter 1st Number</label>
+        <input type="text" id="num"/><br>
+        <br>
+        <button onclick="prime()">Display</button>
+        <h1 id="demo"></h1>
+        <script>
+            function prime(){
+                var num=parseInt(document.getElementById("num").value);
+                var result=" ";
+                for(let i=1;i<=num;i++){
+                    var cnt=0;
+                    for(let j=1;j<=num;j++){
+                        if(i%j==0)
+                        cnt+=1;
+                    }
+                    if(cnt==2)
+                    result=(result+i+" ");
+                }
+                document.getElementById("demo").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

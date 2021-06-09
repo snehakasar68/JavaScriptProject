@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+<script>
+	function Person(firstName,LastName,age){
+		this.firstName=firstName;
+		this.LastName=LastName;
+		this.age=age;
+		this.country="india",
+		this.fullName=function(){return this.firstName+" "+this.LastName}
+	}
+	var p=new Person("Ansh","patil",25);
+	var p1=new Person("jay","shah",30);
+	//document.getElementById("demo").innerHTML=p.firstName+" "+p.age
+	/*var txt="";
+	for(i in p1){
+		txt+=p1[i]+" "
+	}
+	
+	document.getElementById("demo").innerHTML=txt;
+	console.log(p1.fullName())*/
+
+     // document.getElementById("demo").innerHTML=p.firstName+" "+p.age +" "+p1.firstName+" "+p1.age
+/*
+    p.city="pune"
+
+  document.getElementById("demo").innerHTML=p.firstName+" "+p.age +" "+p.city+" "+p1.firstName+" "+p1.age
+*/
+p.city="pune"
+  p.nameAndCity=function(){return this.firstName+" "+this.city}
+ document.getElementById("demo").innerHTML=p.nameAndCity()
+
+</script>
+</body>
+</html>

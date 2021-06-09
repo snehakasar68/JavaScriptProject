@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <label>Enter a number:</label>
+        <input type="text" id="num"/><br><br>
+        <button onclick="disp()">Display</button><br><br>
+        <h1 id="demo"></h1>
+        <script>
+            function disp(){
+                var num=document.getElementById('num').value;
+                var res="";
+                for(let i=0;i<num.length;i++){
+                   for(let j=i+1;j<num.length+1;j++){
+                       var no=num.slice(i,j);
+                       if(no%2==0){
+                        res+=no+"-";
+                        break;
+                       }
+                        
+                   }
+                
+                }
+                document.getElementById('demo').innerHTML=res.slice(0,res.length-1);
+            }
+        </script>
+    </body>
+</html>

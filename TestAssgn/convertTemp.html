@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <input type="text" id="temp"/>
+    <select id="temp1">
+        <option>Fahrenheit</option>
+        <option>Celsius</option>
+    </select><br><br>
+    <button id="btn">Calculate</button>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    var cal=document.getElementById('btn');
+    
+    cal.addEventListener('click',()=>{
+    var sel=document.getElementById('temp1').value;
+    console.log(sel);
+    var temp=document.getElementById('temp').value  ;
+    console.log(temp);
+    if(sel=='Fahrenheit'){
+        var cel=((temp-32)*5)/9;
+        document.getElementById('demo').innerHTML="Celsius Temprature is:"+cel+"c";
+    }
+    else{
+        var cel=(temp*2)+30;
+        document.getElementById('demo').innerHTML="farhe Temprature is:"+cel+"f";
+    }
+    })
+</script>
+</html>

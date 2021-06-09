@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <label>Enter a number:</label>
+        <input type="number" id="num"/>
+        <button onclick="add()">Add</button>
+        <button onclick="display()">Display</button>
+        <h2 id="demo"></h2>
+        <h2 id="demo1"></h2>
+        <script>
+            var arr=[];
+            var i=0;
+            function add(){
+                var num=parseInt(document.getElementById("num").value);
+                arr.push(num);
+                document.getElementById("demo").innerHTML="Added Successfully!!";
+            }
+            function display(){
+                var result="";
+               result=arr.map((value,index)=>{return "element "+index+"="+value+"<br>";})
+                document.getElementById("demo").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

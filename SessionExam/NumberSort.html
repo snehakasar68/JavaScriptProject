@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="arraySort()">Array sort </button>
+<h1 id="demo"></h1>
+
+<h1 id="demo1"></h1>
+<h2 id="d1"></h2>
+<h2 id="d2"></h2>
+
+<script>
+	var arr=[100,50,2,20,1];
+	document.getElementById("demo").innerHTML="original array:<br/>"+arr
+  function arraySort(){
+    /*arr.sort()
+    document.getElementById("demo1").innerHTML="Sorted array:<br/>"+arr;*/
+  	//arr.sort(function(a,b){return a-b}) // asc
+  		arr.sort(function(a,b){return b-a})// des default sort value as string
+       // arr.sort(function(a,b){return 0.5-Math.random()})
+  	
+  	document.getElementById("demo1").innerHTML="Sorted array:<br/>"+arr;
+   // document.getElementById("d1").innerHTML="Min value: "+arr[0];
+    //  document.getElementById("d2").innerHTML="max value:"+arr[arr.length-1];
+       document.getElementById("d1").innerHTML="Min value: "+arr[arr.length-1];
+      document.getElementById("d2").innerHTML="max value:"+arr[0];
+  }
+</script>
+</body>
+</html>

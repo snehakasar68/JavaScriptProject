@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Factorial of number</title>
+    </head>
+    <body>
+        <label>Enter Number</label>
+        <input type="text" id="num"/>
+        <button onclick="fact()">Check</button>
+        <h1 id="demo"></h1>
+        <script>
+            function fact(){
+                var num=parseInt(document.getElementById("num").value);
+                var fact=1;
+                for(let i=1;i<=num;i++){
+                    fact=fact*i;
+                }
+                document.getElementById("demo").innerHTML="Factorial of "+num+" is:"+fact;
+            }
+        </script>
+    </body>
+</html>
